@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Icono de Página -->
+    <link href="assets/img/logo.png" rel="icon">
+    <title>Tucuman Experience</title>
+    <!-- CDN Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Font Awesome para íconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <!-- Fuente Titilium -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Poppins&family=Titillium+Web:ital@0;1&family=Ubuntu&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Dentro del Header va el Navbar responsive- Creado por Marcos Rigo- 01/08/22 -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navbar-design">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/logo.png" alt="" id="logo-navbar">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 float-end">
+                        <li class="nav-item">
+                            <a class="nav-link active float-end aria-current=" page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link float-end" href="about.html">Sobre nosotros</a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link float-end" href="galeria.html">Galería</a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link float-end" href="login.html">Login</a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link float-end" href="#Modal-suscribe" data-bs-toggle="modal">Suscribirme</a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link float-end" href="contact.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--modal de suscripcion-->
+    <div class="modal fade" id="Modal-suscribe" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" id="cabecera-modal">
+                    <h5 class="modal-title" id="exampleModalLabel">Recibí todas las novedades por email 📨</h5> 
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="needs-validation">
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" minlength="2" maxlength="30" placeholder="Escribe aquí..." required pattern="[a-zA-Z]+"> <br>
+
+                            <label for="formGroupExampleInput" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" minlength="2" maxlength="30" placeholder="Escribe aquí..." required pattern="[a-zA-Z]+"> <br>
+       
+                            <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" maxlength="30" required>
+                            <div id="emailHelp" class="form-text">Ej. "pedro@dominio.com"
+                            </div>
+                        </div>
+
+                        <div class="modal-footer">
+                    
+                        
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                   
+                        <button type="submit" class="btn btn-primary">Suscribirme</button>
+                    </div>
+                    </form>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    <!-- Desde aqui va el cuerpo de la página -->
+    <main id="main-page">
+        <br><br><br><br>
+
+        <!-- Carrusel responsivo - tamaño de las imágenes 1140x500 px -->
+        <section>
+        <div class="container-fluid">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/img/carrusel/1.png" class="d-block" alt="casa-historica" id="img-carrusel">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/carrusel//5.jpg" class="d-block" alt="cascada" id="img-carrusel">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/carrusel/3.png" class="d-block" alt="el-cadillal" id="img-carrusel">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        </section>
+        <br><br>
+        <!-- Seccion entradas del Blog- Creado por Valentin Quiroga- 02/08/22-->
+        <section id="blog-posts">
+            <div class="container-fluid">
+                <h3 class="pt-5 ps-5">Entradas recientes</h3>
+                <br>
+                <div class="row">
+                    <div class="row mx-auto">
+                        <div class="row col-xl-8 col-lg-8 mx-auto">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 ">
+                                <div class="card shadow p-3 mb-5 bg-body rounded">
+                                    <img src="assets/img/entrada/tafi.jpg" class="card-img-top p-1"
+                                        alt="tafi-del-valle">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tafi del Valle</h5>
+                                        <p class="card-text">Se ubica prácticamente en el centro del bellísimo Valle de
+                                            Tafí, que separa las elevadas cordilleras de la Sierra del Aconquija al sur
+                                            y las Cumbres Calchaquíes al norte...</p>
+                                        <a href="tafi-del-valle.html" class="btn btn-orange text-light btn-view-more"><i id="view-more"
+                                                class="fa fa-thin fa-plus"></i>Ver post</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12">
+                                <div class="card shadow p-3 mb-5 bg-body rounded">
+                                    <img src="assets/img/entrada/nougues.jpeg" class="card-img-top p-1"
+                                        alt="villa-nougues">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Villa Nougués</h5>
+                                        <p class="card-text">Es un hermoso pueblo, sede de tradicionales familias
+                                            tucumanas, ubicado en una geografía privilegiada de sol y de verde, con un
+                                            buen clima mesotérmico todo el año...</p>
+                                        <a href="villa-nougues.html" class="btn btn-orange text-light btn-view-more"><i id="view-more"
+                                                class="fa fa-thin fa-plus"></i>Ver post</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12">
+                                <div class="card shadow p-3 mb-5 bg-body rounded">
+                                    <img src="assets/img/entrada/Empanadas.jpg" class="card-img-top p-1"
+                                        alt="empanadas">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Empanadas Tucumanas</h5>
+                                        <p class="card-text">Jugosa, recién horneada y un sabor regional inigualable.
+                                            Conoce un poco más de la comida tipica por excelencia de los tucumanos...
+                                        </p>
+                                        <a href="empanadas.html" class="btn btn-orange text-light btn-view-more"><i id="view-more"
+                                                class="fa fa-thin fa-plus"></i>Ver post</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 ">
+                                <div class="card shadow p-3 mb-5 bg-body rounded ">
+                                    <img src="assets/img/entrada/Plaza-de-noche.jpg" class="card-img-top p-1"
+                                        alt="plaza-independencia">
+                                    <div class="card-body">
+                                        <h5 class="card-title ">Sabado por la Noche</h5>
+                                        <p class="card-text ">¿Qué hacer durante el fin de semana? Aqui las mejores
+                                            propuestas para divertirte durante la noche tucumana</p>
+                                        <a href="sabado-por-la-noche.html" class="btn btn-orange text-light btn-view-more"><i id="view-more"
+                                                class="fa fa-thin fa-plus"></i>Ver post</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Botones de Paginación-->
+                            <div class="d-flex justify-content-center">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination ">
+                                        <li class="page-item border border-2 pagination-hover">
+                                            <a class="page-link mx-1 border-0 bg-transparent  text-light fs-5 fw-bold" href="404.html" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item mx-1 border border-2 pagination-hover"><a class="page-link border-0 bg-transparent text-light fs-5 fw-bold" href="404.html">1</a></li>
+                                        <li class="page-item mx-1 border border-2 pagination-hover"><a class="page-link border-0 bg-transparent text-light fs-5 fw-bold" href="404.html">2</a></li>
+                                        <li class="page-item mx-1 border border-2 pagination-hover"><a class="page-link border-0 bg-transparent text-light fs-5 fw-bold" href="404.html">3</a></li>
+                                        <li class="page-item mx-1 border border-2 pagination-hover">
+                                            <a class="page-link border-0 bg-transparent text-light fs-5 fw-bold" href="404.html" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <!-- Aqui termina la parte de las entradas del blog-->
+                        <!--! Dentro de este Div va la segunda columna de la pagina principal-->
+                        
+                        <!--Sección segunda columna blog - Creada por Martín Fanlo- 03/08-->
+                        <div class="col-xl-4 col-lg-4">
+                            <form class="d-flex shadow">
+                                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" maxlength="50">
+                                <a class="btn btn-outline-success"  href="404.html" ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                  </svg></a>
+                                
+                                </form>
+                                <br>
+    
+                                <h3 class="categories-title">Categorías</h3>
+                                <div class="list-group">
+                                    
+                                    <a class="btn" id="button-cat" href="404.html" role="button">Lugares</a>
+                                    <br>
+                                    <a class="btn" id="button-cat" href="404.html" role="button">Gastronomía</a>
+                                    <br>
+                                    <a class="btn" id="button-cat" href="404.html" role="button">Noche</a>
+                                    <br>
+                                    <a class="btn" id="button-cat" href="404.html" role="button">Clima</a>
+                                    <br>
+                                    <a class="btn" id="button-cat" href="404.html" role="button">Transporte</a>
+                                    <br>
+                                    
+                                </div>
+                              <br><br>
+                            
+                              <a href="https://bodegalasarcas.com.ar/web/"target=”_blank”><img class="img-thumbnail img-thumbnail-publicidad" src="./assets/img/publicidad/EtZkh48WQAE8Dgg.jpg" ></a>
+                        
+                        </div>
+                
+            </div>
+            </div>
+        </section>
+</main>
+    <!-- Aquí comienza el Footer de la página- Creado por Marcos Rigo- 01/08/22-->
+    <footer>
+        <div class="container-fluid border border-solid bg-light footer pt-5 ">
+            <div class="container py-1">
+                <div class="row g-5">
+                    <div class="col-lg-4 col-md-6">
+                        <img src="assets/img/logo.png" alt="" id="logo-footer">
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="mb-4 text-center">Seguinos en nuestras redes</h5>
+                        <div class="d-flex pt-2 justify-content-between">
+                            <a class="btn btn-square btn-outline-light btn-social"
+                                href="https://www.facebook.com/RollingCodeSchool" target="_blank"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-outline-light btn-social"
+                                href="https://www.instagram.com/rollingcodeschool/" target="_blank"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a class="btn btn-square btn-outline-light btn-social"
+                                href="https://www.linkedin.com/company/rollingcode/" target="_blank"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-square btn-outline-light btn-social"
+                                href="https://www.youtube.com/channel/UCqqU2Ztlv_QKGPXRW9LrR9w/featured" target="_blank"><i
+                                    class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" id="newsletter-footer">
+                        <h5 class=" mb-4" style="text-align: center;">Suscribete al Newsletter</h5>
+                        <div class="position-relative " style="max-width: 100%;">
+                            <form class="needs-validation">
+                                <input class="form-control border-1 border border-solid w-100 py-3 ps-4 pe-5" type="email"
+                                placeholder="Email" maxlength="35" required>
+                                <button type="submit" href="404.html" class="btn py-2 position-absolute top-0 end-0 mt-2 me-2"
+                                id="boton-newsletter"><i class="fa fa-envelope-open-text"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <hr>
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col text-center">
+                            &copy; <small> 2022 - 2023 </small> <strong> The Ants </strong> | Todos los derechos
+                            reservados.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Este es el Script de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
+</body>
+</html>

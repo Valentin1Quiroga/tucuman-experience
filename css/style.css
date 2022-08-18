@@ -1,0 +1,262 @@
+#logo-navbar {
+    width: 150px;
+    height: 75px;
+}
+
+#logo-footer {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+#navbarSupportedContent {
+    flex-grow: 0;
+
+}
+.nav-item a:hover{
+    color: rgb(248, 141, 0) !important;
+    text-decoration: underline;
+
+}
+#cabecera-modal {
+    background-color: #0656e0;
+    color: white;
+}
+
+
+
+/* Footer */
+
+.footer .btn.btn-social {
+    margin-right: 5px;
+    color: #5FA8E6;
+    border: 1px solid #5FA8E6;
+    border-radius: 38px;
+    transition: .3s;
+}
+
+.footer .btn.btn-social:hover {
+    color: white;
+    background-color: #0656e0;
+}
+
+#boton-newsletter {
+    color: white;
+    border: 1px solid #5FA8E6;
+    border-radius: 10px;
+    transition: .3s;
+    background-color: #0656e0;
+}
+
+#boton-newsletter:hover {
+    color: #0656e0;
+    background-color: white;
+}
+
+
+.footer .copyright {
+    padding: 25px 0;
+    border-top: 1px solid rgba(256, 256, 256, .1);
+}
+@media screen and (max-width: 990px) {
+    #newsletter-footer{
+        width: 100%;
+    }
+    
+}
+
+/* Efectos de las cards y su boton de ver mas*/
+
+#blog-posts .card:hover{
+    transform: translateY(-15px);
+    transition: all 0.5s ease-in-out;
+
+}
+.btn-view-more:hover{
+    background-color:#183153;
+    transition: all 0.2s ease-in-out;
+}
+#view-more{
+    display: none;
+}
+.btn-view-more:hover #view-more{
+    display: block;
+}
+
+.comment-hour{
+    font-size: small;
+}
+/* Boton pagina 404*/
+.bg-error-404{
+    background-color: #2A8B21;
+}
+.text-error-404{
+    color: #2A8B21;
+}
+/* Desaparece la publicidad cuando se pasa a formato celular*/
+@media (max-width: 700px) {
+    .img-thumbnail-publicidad{
+      display: none;
+       }       
+}
+/*Configuracion para las imagenes del carrusel*/
+
+#img-carrusel {
+    width: 100vw;
+    object-fit: cover;
+}
+/* banderas para cambio de lenguaje*/
+.img-flag {
+    width: 30px;
+    height: 20px;
+
+}
+
+/* CSS De la pagina LOGIN- Creado por Ana Belen Luna*/
+
+
+.login-page{
+    /*background: linear-gradient(150deg, #6C3483, #58D68D);*/
+    background-image: url(../assets/img/login-background.jpg);
+    background-size: cover;
+   
+}
+.bg-form-login{
+    background-color: #474D5E;
+}
+.bg-ingresar{
+    background-color: #6C3483;
+}
+/*!botones y bordes naranjas*/
+
+.btn-orange{
+    background-color: #EC4A05;
+}
+.border-orange{
+    border: 5px solid #EC4A05;
+}
+
+/*? Cambios de diseño */
+
+#blog-posts {
+    background-image: url(../assets/img/publicidad/JCP_0082.jpg);
+    object-fit: cover;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+.nav-item {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    font-size:larger;
+    
+}
+
+#navbar-design{
+    background: linear-gradient(to right,white, #31cff3,#fcbc44);      
+}
+
+h3{
+    font-weight: bold;
+color: white;
+font-style: italic;
+}
+.categories-title {
+font-weight: bold;
+color: white;
+font-style: italic;
+display: flex;
+justify-content: center;
+}
+
+.list-group{
+background-image: url(../assets/img/publicidad/textura-hoja-closeup-hojas_42547-1466.jpg);
+background-size: cover;
+font-family:'Titillium Web', sans-serif;
+text-shadow: 0.2em 0.2em 0.1em #333;
+display: flex;
+align-items: center;
+border: 5px solid;
+border-color: white;
+
+}
+
+#button-cat{
+    background-color: transparent;
+    
+    font-weight: bold;
+    font-size: larger;
+    color: white;
+    height: max-content;
+    width:max-content;
+    display: flex;
+    
+}
+
+#button-cat:hover{
+    transform: translateY(-10px);
+    transition: all 0.5s ease-in-out;
+
+}
+
+#input-search-form{
+    background-color:white;
+    background-size: cover;
+    border-style:groove;
+    font-family:'Titillium Web', sans-serif;
+    width: 300px;
+}
+
+#search-button-form{
+    width: 45px;
+    background-color:none;
+   
+}
+svg{
+    color: #fafcfb;
+    width: 25px;
+    height: 25px;
+}
+
+*{
+    font-family:'Titillium Web', sans-serif;
+}
+/* efecto paginacion*/
+.pagination-hover:hover{
+    background-color: rgba(128, 128, 128, 0.692);
+}
+/*imagen de fondo para las entradas*/
+.background-post{
+    background-image: url(../assets/img/foto_montañas_para_entradas.jpg);
+    background-size: cover;
+    
+}
+/* Texto que cambia de color segun el tamaño de la pantalla para acomodarse al color del fondo*/
+.text-shadow{
+    text-shadow: .1em 0.1em 0.1em #333;
+    }
+    
+@media(max-width:475px){
+        .text-shadow{
+            color:black !important;
+            text-shadow:none; 
+        }
+}
+.border-white{
+    border: 4px solid white;
+}
+@media(min-width:768px) and (max-width:1200px){
+    .about-text{
+        color: white!important;
+        text-shadow: .1em 0.1em 0.1em #333;
+    }
+    
+}
+@media (max-width:1200px){
+    .about-text-2{
+        color: white!important;
+        text-shadow: .1em 0.1em 0.1em #333;
+    }
+    
+}

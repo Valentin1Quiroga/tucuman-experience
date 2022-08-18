@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Icono de Página -->
+    <link href="assets/img/logo.png" rel="icon">
+    <title>Tucuman Experience</title>
+
+    <!-- CDN Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Font Awesome para íconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Fuente Titilium -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Poppins&family=Titillium+Web:ital@0;1&family=Ubuntu&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Dentro del Header va el Navbar responsive -->
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navbar-design">
+            <div class="container">
+
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/logo.png" alt="" id="logo-navbar">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 float-end">
+                        <li class="nav-item">
+                            <a class="nav-link active float-end aria-current=" page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link float-end" href="about.html">Sobre nosotros</a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link float-end" href="galeria.html">Galería</a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link float-end" href="login.html">Login</a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link float-end" href="#Modal-suscribe" data-bs-toggle="modal">Suscribirme</a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link float-end" href="contact.html">Contacto</a>
+                        </li>
+
+
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--modal de suscripcion-->
+    <div class="modal fade" id="Modal-suscribe" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" id="cabecera-modal">
+                    <h5 class="modal-title" id="exampleModalLabel">Recibí todas las novedades por email 📨</h5> 
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="needs-validation">
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" minlength="2" maxlength="30" placeholder="Escribe aquí..." required pattern="[a-zA-Z]+"> <br>
+
+                            <label for="formGroupExampleInput" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" minlength="2" maxlength="30" placeholder="Escribe aquí..." required pattern="[a-zA-Z]+"> <br>
+       
+                            <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" maxlength="30" required>
+                            <div id="emailHelp" class="form-text">Ej. "pedro@dominio.com"
+                            </div>
+                        </div>
+
+                        <div class="modal-footer">
+                    
+                        
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                   
+                        <button type="submit" class="btn btn-primary">Suscribirme</button>
+                    </div>
+                    </form>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    <!-- Desde aqui va el cuerpo de la página -->
+    <!--! Blog creado por Valentin Quiroga 05/08/22-->
+    <main class="background-post pb-5">
+        <br><br><br><br><br>
+        <div class="container">
+            <h1 class="text-center fw-bold">Villa Nougués</h1>
+        </div>
+
+        <div class="container">
+            <img src="assets/img/entrada/nougues.jpeg" class="img-fluid img-thumbnail rounded mx-auto mb-2 d-block"  alt="villa-nougues">
+            <div class="text-end">
+                <a href="villa-nougues.html"><img src="assets/img/spain-flag-icon.png" class="img-flag rounded-circle" alt="spain-flag"></a>
+                <a href="villa-nouges-en.html"><img src="assets/img/united-kingdom-flag-icon.png" class="img-flag rounded-circle" alt="uk-flag"></a>
+            </div">
+            <p class="fs-5 lh-sm" >
+                Elegida por gran cantidad de turistas a lo largo de todo el año, Villa Nougués es un destino caracterizado por su mezcla de arquitectura exquisita con cerros verdes cargados de vegetación.La villa se destaca por ser una de las primeras en la provincia, ya que nació en el año 1899 con la construcción de la casa de veraneo del ingeniero Luis F. Nougués, importante empresario azucarero y tiempo después, gobernador de la provincia.
+            </p>
+                
+            </div>
+            <div  class=" d-flex justify-content-center">
+                <iframe class="rounded border-white"  width="560" height="315" src="https://www.youtube.com/embed/0-V9tl-X0OI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <br>
+            <div class="container">
+            <p class="fs-5 lh-sm text-light text-shadow">
+                    En general tiene un clima agradable, con veranos cálidos e inviernos frescos pero en ambas estaciones las temperaturas son moderadas, lo que hace que cada paseo sea agradable.
+                    Cuenta con un club de golf reconocido a nivel nacional. Sus chalets rodeados de árboles y lomas invitan al turista a explorar la villa de punta a punta y su ex hostería, que actualmente funciona sólo como restaurante y salón de fiestas permite experimentar los sabores de comidas regionales. <br><br>
+                    Un importante icono, es su capilla de estilo neogótico creada en el año 1918, una construcción cuya fisonomía yace en plena armonía con el paisaje que la contiene, la Capilla de Villa Nougués presenta una edificación acorde a la procedencia cultural de los primeros pobladores. El fundador de la villa, al igual que muchas de las familias residentes en aquellos momentos culmines, era de origen vasco francés, y pusieron a la naciente población bajo la advocación de la Virgen de Lourdes. Construyeron entonces una gruta similar a la original del País Vasco, además de una capilla al estilo de sus antepasados. Ya la visitaste? dejanos tu opinion en la caja de comentarios.
+                    
+                </p>
+                <br><br><br>
+                <h2 class="text-light">Dejanos tu comentario</h2>
+                <form id="post-comments" class="needs-validation">
+                    <div class="mb-3">
+                        <label for="user-name-comment" class="form-label"></label>
+                        <input type="text" class="form-control" id="user-name-comment" placeholder="Nombre" pattern="[a-zA-Z]+" required minlength="2" maxlength="25">
+                    </div>
+                    <div class="mb-3">
+                        <label for="user-comment" class="form-label "></label>
+                        <textarea class="form-control" id="user-comment" placeholder="Comenta aqui" rows="3" minlength="2" maxlength="350"></textarea>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <button class="btn btn-orange text-light" type="submit">Enviar Comentario</button>
+                    </div>
+                </form>
+                <br><br>
+                <div class="container bg-light rounded border-orange border-bottom-0 border-top-0">
+                    <div class="row">
+                        <div class=" col-12 border-top border-bottom border-dark">
+                            <div class="d-flex">
+                                <img src="assets/img/user.png" class="border border-dark mx-3 my-auto" width="64" height="64" alt="usuario">
+                                <div class="media-body">
+                                    <p class="mb-0 text-decoration-underline text-primary">Julian Perez</p>
+                                    <p class="mt-0 fst-italic comment-hour">2:45pm, Hoy</p>
+                                </div>
+                                <p class="ms-5">"Es una hermosa capilla hecha de piedras con estilo gótico que me hizo acordar a iglesias del Reino Unido por el estilo y el entorno."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class=" col-12 border-top border-bottom border-dark">
+                            <div class="d-flex">
+                                <img src="assets/img/user.png" class="border border-dark mx-3 my-auto" width="64" height="64" alt="usuario">
+                                <div class="media-body">
+                                    <p class="mb-0 text-decoration-underline text-primary">Jessica Lopez</p>
+                                    <p class="mt-0 fst-italic comment-hour">3:22pm, Hace 2 dias</p>
+                                </div>
+                                <p class="ms-5">"La Villa Nougues es muy linda, con casas muy grandes en las laderas de la montaña y un camino angosto serpenteante rodeado de vegetación."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class=" col-12 border-top border-bottom border-dark">
+                            <div class="d-flex">
+                                <img src="assets/img/user.png" class="border border-dark mx-3 my-auto" width="64" height="64" alt="usuario">
+                                <div class="media-body">
+                                    <p class="mb-0 text-decoration-underline text-primary">Martin Rodriguez</p>
+                                    <p class="mt-0 fst-italic comment-hour">10:56am, Hace 1 semana</p>
+                                </div>
+                                <p class="ms-5">""</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class=" col-12 border-top border-bottom border-dark">
+                            <div class="d-flex">
+                                <img src="assets/img/user.png" class="border border-dark mx-3 my-auto" width="64" height="64" alt="usuario">
+                                <div class="media-body">
+                                    <p class="mb-0 text-decoration-underline text-primary">Lucas Quintero</p>
+                                    <p class="mt-0 fst-italic comment-hour">9:12pm, Hace 1 semana</p>
+                                </div>
+                                <p class="ms-5">"Hermosa iglesia!! Durante nuestra visita a Villa Nougués pudimos admirar la fachada de esta hermosa parroquia. Bajo la advocación de la Virgen de Lourdes (hay una gruta muy sencilla a unos pocos metros), se trata de la única capilla de Villa Nougués, fue construida en 1918 con marcado estilo neo gótico."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class=" col-12 border-top border-bottom border-dark">
+                            <div class="d-flex">
+                                <img src="assets/img/user.png" class="border border-dark mx-3 my-auto" width="64" height="64" alt="usuario">
+                                <div class="media-body">
+                                    <p class="mb-0 text-decoration-underline text-primary">Juan Fernando Martinez</p>
+                                    <p class="mt-0 fst-italic comment-hour">11:26am, Hace 1 semana</p>
+                                </div>
+                                <p class="ms-5">"Es un lugar no muy conocido que me pareció de lo más lindo en Tucumán."</p>
+                            </div>
+                        </div>
+                    </div>
+                                        
+                </div>
+
+    </main>
+
+
+
+    <!-- Aquí comienza el Footer de la página -->
+    <footer>
+        <div class="container-fluid border border-solid bg-light footer pt-5 ">
+            <div class="container py-1">
+                <div class="row g-5">
+                    <div class="col-lg-4 col-md-6">
+                        <img src="assets/img/logo.png" alt="" id="logo-footer">
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="mb-4 text-center">Seguinos en nuestras redes</h5>
+
+                        <div class="d-flex pt-2 justify-content-between">
+                            <a class="btn btn-square btn-outline-light btn-social"
+                                href="https://www.facebook.com/RollingCodeSchool" target="_blank"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-outline-light btn-social"
+                                href="https://www.instagram.com/rollingcodeschool/" target="_blank"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a class="btn btn-square btn-outline-light btn-social"
+                                href="https://www.linkedin.com/company/rollingcode/" target="_blank"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-square btn-outline-light btn-social"
+                                href="https://www.youtube.com/channel/UCqqU2Ztlv_QKGPXRW9LrR9w/featured" target="_blank"><i
+                                    class="fab fa-youtube"></i></a>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6" id="newsletter-footer">
+                        <h5 class=" mb-4" style="text-align: center;">Suscribete al Newsletter</h5>
+                        <div class="position-relative " style="max-width: 100%;">
+                            <form class="needs-validation">
+                                <input class="form-control border-1 border border-solid w-100 py-3 ps-4 pe-5" type="email"
+                                placeholder="Email" maxlength="35" required>
+                                <button type="submit" href="404.html" class="btn py-2 position-absolute top-0 end-0 mt-2 me-2"
+                                id="boton-newsletter"><i class="fa fa-envelope-open-text"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+
+                <hr>
+
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col text-center">
+                            &copy; <small> 2022 - 2023 </small> <strong> The Ants </strong> | Todos los derechos
+                            reservados.
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Este es el Script de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>
